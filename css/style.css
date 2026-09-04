@@ -945,8 +945,58 @@ footer {
    MOBILE
 ========================================= */
 
+
 @media (max-width: 768px) {
 
+    .single-flowers {
+        padding: 60px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .single-flower-item {
+        grid-template-columns: 105px 1fr;
+        min-height: 135px;
+    }
+
+    .single-flower-image {
+        width: 105px;
+        height: 135px;
+    }
+
+    .single-flower-info {
+        padding: 15px;
+    }
+
+    .flower-category {
+        font-size: 7px;
+    }
+
+    .single-flower-info h3 {
+        font-size: 18px;
+        margin: 4px 0;
+    }
+
+    .single-flower-info p {
+        font-size: 9px;
+        line-height: 1.4;
+    }
+
+    .single-flower-bottom {
+        margin-top: 9px;
+    }
+
+    .single-flower-bottom strong {
+        font-size: 13px;
+    }
+
+    .order-button {
+        padding: 7px 12px;
+        font-size: 8px;
+    }
+}
     /* ===============================
        GLOBAL
     =============================== */
@@ -1237,7 +1287,117 @@ footer {
         font-size: 12px;
     }
 
+/* ================================
+   SINGLE FLOWERS
+================================ */
 
+.single-flowers {
+    padding: 90px 7%;
+    background: #fbf7f2;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title span {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #a27b7b;
+}
+
+.section-title h2 {
+    margin: 10px 0;
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    color: var(--dark);
+}
+
+.section-title p {
+    color: #777;
+    font-size: 13px;
+}
+
+.single-flower-list {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.single-flower-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    min-height: 180px;
+    background: #fff;
+    border-bottom: 1px solid #eaded8;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.single-flower-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 30px rgba(50, 30, 30, .07);
+}
+
+.single-flower-image {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.single-flower-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.single-flower-item:hover img {
+    transform: scale(1.06);
+}
+
+.single-flower-info {
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flower-category {
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #a27b7b;
+}
+
+.single-flower-info h3 {
+    margin: 6px 0;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    color: var(--dark);
+}
+
+.single-flower-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.6;
+}
+
+.single-flower-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.single-flower-bottom strong {
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    color: var(--dark);
+}
     /* ===============================
        FILTER MOBILE
     =============================== */
